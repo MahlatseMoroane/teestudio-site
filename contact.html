@@ -99,17 +99,21 @@
          <div class="row clearfix">
            <div class="col-md-6 col-lg-6 contact_form">
              
-            <form method="" action="">
-              <div class="footer_form_outer">
-                <input name="" placeholder="Name" type="text">
-                <input name="" placeholder="Email" type="text">
-                <input name="" placeholder="Phone Number" type="text">
-                <textarea placeholder="Message"></textarea>
-                <div class="form_submit_btn">
-                  <input name="" value="Submit" type="submit">
-                </div>
-              </div>  
-            </form>
+                <form name="contact" method="POST" netlify>
+  <div class="footer_form_outer">
+    <div class="two_fields">
+      <input type="text" name="first_name" placeholder="Name" required>
+      <input type="text" name="last_name"  placeholder="Last Name" required>
+    </div>
+
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+
+    <div class="form_submit_btn">
+      <input type="submit" value="Submit">
+    </div>
+  </div>  
+</form>
 
            </div>
            <div class="col-md-6 col-lg-6 p-contact_info">
@@ -147,7 +151,7 @@
       <div class="footer_box_cover">
         <div class="container">
           <div class="footer_form_cover" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
-                   <form method="POST" action="https://formspree.io/f/yourFormID">
+           <form name="contact" method="POST" netlify>
   <div class="footer_form_outer">
     <div class="two_fields">
       <input type="text" name="first_name" placeholder="Name" required>
